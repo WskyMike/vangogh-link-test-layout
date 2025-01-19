@@ -1,0 +1,30 @@
+.bar-info {
+  background: #231815;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #ffffff;
+  padding: 0 13.5vw;
+}
+
+.bar-info__links {
+  display: flex;
+  gap: 3.5vw;
+}
+
+@media screen and (max-width: 1601px) {
+  .bar-info {
+    padding: 0 11.5vw;
+  }
+
+  .bar-info__links {
+    gap: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .bar-info {
+    display: none;
+  }
+}

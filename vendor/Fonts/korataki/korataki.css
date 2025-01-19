@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Korataki";
+  src: url("./korataki.woff2") format("woff2"),
+       url("./korataki.woff") format("woff");
+}

@@ -1,0 +1,250 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0c0c0c;
+  color: #fff;
+  padding: 3.5% 13vw 41px 13vw;
+}
+
+.footer__section {
+  margin: 0 10px 10px 10px;
+}
+
+.footer__section h4 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.footer__section p {
+  line-height: 1.4;
+}
+
+.footer__section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__section ul li {
+  margin-bottom: 10px;
+}
+
+.footer__section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.payment-icons img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.footer__section.legal {
+  color: #808080;
+  font-family: "Roboto";
+  line-height: 1.4;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.footer__section.policies {
+  line-height: 1.4;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.footer__column {
+}
+
+.footer__column.column-1 {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  gap: 6%;
+}
+
+.footer__column.column-2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 1.5%;
+  gap: 3%;
+}
+
+.footer__column.column-3 {
+  position: relative;
+  right: 2%;
+}
+
+.footer__column.column-4 {
+  position: relative;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 28%;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 12%;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1601px) {
+  .footer {
+    padding: 4% 11vw 41px 10.5vw;
+  }
+
+  .footer__section-img {
+    width: 217px;
+  }
+
+  .footer__column.column-1 {
+    width: 26%;
+    gap: 9%;
+  }
+
+  .footer__column.column-2 {
+    right: 1%;
+  }
+
+  .footer__column.column-3 {
+    right: 3%;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+  .footer.active {
+    display: grid !important;
+    grid-template-areas:
+      "logo logo logo"
+      "address contacts services"
+      "policies contacts services"
+      "payment-icons legal legal";
+    grid-template-columns: 37% 2fr 21.6%;
+    gap: 20px;
+    padding: 6.5% 5vw 0px 4.5%;
+  }
+
+  .footer__section h4 {
+    font-size: 18px;
+  }
+
+  .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__section-img {
+    width: 180px;
+  }
+
+  .address {
+    grid-area: address;
+    margin-bottom: 0;
+  }
+
+  .contacts {
+    grid-area: contacts;
+    position: relative;
+    right: 7%;
+    margin: 0;
+  }
+
+  .services {
+    grid-area: services;
+    margin-left: 0;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+  }
+
+  .footer__section.policies {
+    grid-area: policies;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    position: relative;
+    bottom: 14%;
+    margin-right: 0;
+  }
+
+  .payment-icons {
+    grid-area: payment-icons;
+    display: flex;
+    gap: 12%;
+    position: relative;
+    right: 7%;
+    bottom: 33%;
+  }
+
+  .footer__section.legal {
+    grid-area: legal;
+    font-size: 16px;
+    position: relative;
+    left: 5%;
+    bottom: 33%;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .footer.active {
+    display: grid !important;
+    grid-template-areas:
+      "logo"
+      "address"
+      "contacts"
+      "services"
+      "policies"
+      "payment-icons"
+      "legal";
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding: 10.5% 5vw 9px 7.5%;
+  }
+
+  .footer__section p {
+    margin-top: 10px;
+  }
+
+  .address {
+    margin-top: 20px;
+  }
+
+  .contacts {
+    right: 0;
+    margin-left: 6px;
+    margin-top: 10px;
+  }
+
+  .services {
+    margin-left: 10px;
+
+    ul {
+      gap: 2px;
+    }
+  }
+
+  .footer__section.legal {
+    left: 0;
+    bottom: 0;
+  }
+
+  .payment-icons {
+    right: 0;
+    bottom: 0;
+    justify-content: flex-start;
+    margin-top: 16%;
+    margin-bottom: 7%;
+    gap: 11%;
+  }
+}

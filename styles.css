@@ -1,0 +1,17 @@
+@import url(./vendor/normalize.css);
+@import url(./src/page.css);
+@import url(./vendor/Fonts/korataki/korataki.css);
+@import url(./vendor/Fonts/lato/latofonts.css);
+@import url(./vendor/Fonts/roboto/stylesheet.css);
+
+/* INFO-BAR */
+@import url(./src/blocks/Info-bar/info-bar.css);
+
+/* HEADER */
+@import url(./src/blocks/Header/Header.css);
+
+/* SEARCH-RESULTS */
+@import url(./src/blocks/Search-results/Search-results.css);
+
+/* FOOTER */
+@import url(./src/blocks/Footer/footer.css);

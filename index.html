@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vangogh Link Test Layout</title>
+  <style>
+    .footer {
+      display: none;
+    }
+
+    .footer.active {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bar-info">
+    <div class="bar-info__links">
+      <a href="#">Доставка и оплата</a>
+      <a href="#">Гарантия и возврат</a>
+      <a href="#">EN</a>
+    </div>
+  </div>
+  <header class="header">
+    <img class="header__logo" src="./src/img/Logo.svg" alt="Лого">
+    <nav class="header__menu">
+      <a href="#">Каталог</a>
+      <a href="#">О компании</a>
+      <a href="#">Контакты</a>
+    </nav>
+    <button class="header__burger" aria-label="Открыть меню">
+      <img class="header__burger-img" src="./src/img/header_menu_770.svg" alt="Меню" />
+    </button>
+    <div class="header__actions">
+      <div class="header__search">
+        <input class="header__search-input" type="text" placeholder="Лампы">
+        <button class="header__search-btn" aria-label="Поиск">
+          <div class="header__search-img"></div>
+        </button>
+      </div>
+      <div class="header__cart-button">
+        <button class="header__cart-icon-wrapper">
+          <img class="header__cart-icon" src="./src/img/Bag.svg" alt="Корзинка" width="32" height="32">
+          <span class="header__cart-badge">3</span>
+        </button>
+        <span class="header__cart-text">Корзина</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="search-results">
+    <h2 class="search-results__header">Результаты поиска</h2>
+    <div class="search-results__cards" id="cards-container"></div>
+  </section>
+
+  <script src="./src/blocks/Search-results/cards.js"></script>
+
+  <!-- Футер для больших экранов -->
+  <footer id="footer-large" class="footer">
+    <div class="footer__column column-1">
+      <div class="footer__section logo">
+        <img class="footer__section-img" src="./src/img/Logo_footer.svg" alt="Urban Dwelling" />
+      </div>
+
+      <div class="footer__section legal">
+        <p>Этот сайт защищён от спама службой reCAPTCHA Google.
+          <a href="#">Политика конфиденциальности</a>/
+          <a href="#">Условия предоставления услуг</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__column column-2">
+      <div class="footer__section address">
+        <h4>Адрес</h4>
+        <p>Текст, Текст, Текст</p>
+      </div>
+
+      <div class="footer__section contacts">
+        <h4>Контакты</h4>
+        <p>Email: <a href="mailto:urban.dwelling@yandex.com" class="footer__link">urban.dwelling@yandex.com</a></p>
+        <p>Телефон: 8 (800) 555-35-35</p>
+      </div>
+    </div>
+
+    <div class="footer__column column-3">
+      <div class="footer__section services">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Гарантия и возврат</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__column column-4">
+      <div class="footer__section policies">
+        <a href="#">Публичная оферта</a>
+        <a href="#">Политика персональных данных</a>
+      </div>
+      <div class="payment-icons">
+        <img src="./src/img/mir.svg" alt="Мир" />
+        <img src="./src/img/visa.svg" alt="Visa" />
+        <img src="./src/img/master-card.svg" alt="MasterCard" />
+      </div>
+    </div>
+  </footer>
+
+  <!-- Футер для маленьких экранов -->
+  <footer id="footer-small" class="footer">
+    <div class="footer__section logo">
+      <img class="footer__section-img" src="./src/img/Logo_footer.svg" alt="Urban Dwelling" />
+    </div>
+
+    <div class="footer__section legal">
+      <p>Этот сайт защищён от спама службой reCAPTCHA Google.
+        <a href="#">Политика конфиденциальности</a>/
+        <a href="#">Условия предоставления услуг</a>
+      </p>
+    </div>
+
+    <div class="footer__section address">
+      <h4>Адрес</h4>
+      <p>Текст, Текст, Текст</p>
+    </div>
+
+    <div class="footer__section contacts">
+      <h4>Контакты</h4>
+      <p>Email: <a href="mailto:urban.dwelling@yandex.com" class="footer__link">urban.dwelling@yandex.com</a></p>
+      <p>Телефон: 8 (800) 555-35-35</p>
+    </div>
+
+    <div class="footer__section services">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Гарантия и возврат</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section policies">
+      <a href="#">Публичная оферта</a>
+      <a href="#">Политика персональных данных</a>
+    </div>
+    
+    <div class="footer__section payment-icons">
+      <img src="./src/img/mir.svg" alt="Мир" />
+      <img src="./src/img/visa.svg" alt="Visa" />
+      <img src="./src/img/master-card.svg" alt="MasterCard" />
+    </div>
+  </footer>
+
+  <script>
+    // Функция для переключения футеров в зависимости от ширины экрана
+    function updateFooter() {
+      const largeFooter = document.getElementById('footer-large');
+      const smallFooter = document.getElementById('footer-small');
+
+      largeFooter.classList.remove('active');
+      smallFooter.classList.remove('active');
+
+      if (window.innerWidth > 1168) {
+        largeFooter.classList.add('active');
+      } else {
+        smallFooter.classList.add('active');
+      }
+    }
+
+    updateFooter();
+
+    window.addEventListener('resize', updateFooter);
+  </script>
+</body>
+
+</html>
