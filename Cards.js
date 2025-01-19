@@ -6,7 +6,7 @@ const cardData = [
     priceCurrent: "3 490 ₽",
     priceOld: "5 060 ₽",
     badge: "Акция",
-    image: "./src/img/item1.jpg",
+    image: "../src/img/item1.jpg",
   },
   {
     id: "light2",
@@ -14,7 +14,7 @@ const cardData = [
     priceCurrent: "6 700 ₽",
     priceOld: null,
     badge: null,
-    image: "./src/img/item2.jpg",
+    image: "../src/img/item2.jpg",
   },
   {
     id: "light3",
@@ -22,7 +22,7 @@ const cardData = [
     priceCurrent: "5 060 ₽",
     priceOld: "6 060 ₽",
     badge: "Акция",
-    image: "./src/img/item3.jpg",
+    image: "../src/img/item3.jpg",
   },
   {
     id: "light4",
@@ -30,7 +30,7 @@ const cardData = [
     priceCurrent: "3 490 ₽",
     priceOld: null,
     badge: null,
-    image: "./src/img/item1.jpg",
+    image: "../src/img/item1.jpg",
   },
   {
     id: "light5",
@@ -38,7 +38,7 @@ const cardData = [
     priceCurrent: "6 700 ₽",
     priceOld: "6 060 ₽",
     badge: "Акция",
-    image: "./src/img/item2.jpg",
+    image: "../src/img/item2.jpg",
   },
   {
     id: "light6",
@@ -46,7 +46,7 @@ const cardData = [
     priceCurrent: "5 060 ₽",
     priceOld: null,
     badge: null,
-    image: "./src/img/item3.jpg",
+    image: "../src/img/item3.jpg",
   },
   {
     id: "light7",
@@ -54,7 +54,7 @@ const cardData = [
     priceCurrent: "3 490 ₽",
     priceOld: "6 060 ₽",
     badge: "Акция",
-    image: "./src/img/item1.jpg",
+    image: "../src/img/item1.jpg",
   },
   {
     id: "light8",
@@ -62,7 +62,7 @@ const cardData = [
     priceCurrent: "6 700 ₽",
     priceOld: null,
     badge: null,
-    image: "./src/img/item2.jpg",
+    image: "../src/img/item2.jpg",
   },
 ];
 
