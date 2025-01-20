@@ -15,3 +15,11 @@
 
 /* FOOTER */
 @import url(./src/blocks/Footer/footer.css);
+
+.footer {
+    display: none;
+  }
+  
+  .footer.active {
+    display: flex;
+  }

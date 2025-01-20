@@ -1,3 +1,7 @@
+import item1 from "/src/img/item1.jpg";
+import item2 from "/src/img/item2.jpg";
+import item3 from "/src/img/item3.jpg";
+
 // Данные для карточек
 const cardData = [
   {
@@ -6,7 +10,7 @@ const cardData = [
     priceCurrent: "3 490 ₽",
     priceOld: "5 060 ₽",
     badge: "Акция",
-    image: "/src/img/item1.jpg",
+    image: item1,
   },
   {
     id: "light2",
@@ -14,7 +18,7 @@ const cardData = [
     priceCurrent: "6 700 ₽",
     priceOld: null,
     badge: null,
-    image: "/src/img/item2.jpg",
+    image: item2,
   },
   {
     id: "light3",
@@ -22,7 +26,7 @@ const cardData = [
     priceCurrent: "5 060 ₽",
     priceOld: "6 060 ₽",
     badge: "Акция",
-    image: "/src/img/item3.jpg",
+    image: item3,
   },
   {
     id: "light4",
@@ -30,7 +34,7 @@ const cardData = [
     priceCurrent: "3 490 ₽",
     priceOld: null,
     badge: null,
-    image: "/src/img/item1.jpg",
+    image: item1,
   },
   {
     id: "light5",
@@ -38,7 +42,7 @@ const cardData = [
     priceCurrent: "6 700 ₽",
     priceOld: "6 060 ₽",
     badge: "Акция",
-    image: "/src/img/item2.jpg",
+    image: item2,
   },
   {
     id: "light6",
@@ -46,7 +50,7 @@ const cardData = [
     priceCurrent: "5 060 ₽",
     priceOld: null,
     badge: null,
-    image: "/src/img/item3.jpg",
+    image: item3,
   },
   {
     id: "light7",
@@ -54,7 +58,7 @@ const cardData = [
     priceCurrent: "3 490 ₽",
     priceOld: "6 060 ₽",
     badge: "Акция",
-    image: "/src/img/item1.jpg",
+    image: item1,
   },
   {
     id: "light8",
@@ -62,7 +66,7 @@ const cardData = [
     priceCurrent: "6 700 ₽",
     priceOld: null,
     badge: null,
-    image: "/src/img/item2.jpg",
+    image: item2,
   },
 ];
 
@@ -85,10 +89,12 @@ function updateCardStyles() {
   });
 }
 
-const container = document.getElementById("cards-container");
+// Основная функция рендера карточек
+export function renderCards() {
+  const container = document.getElementById("cards-container");
 
-cardData.forEach(({ id, title, priceCurrent, priceOld, badge, image }) => {
-  const cardHTML = `
+  cardData.forEach(({ id, title, priceCurrent, priceOld, badge, image }) => {
+    const cardHTML = `
       <div class="search-results__card" data-id="${id}">
         <div class="search-results__card-img-wrapper">
           <img src="${image}" alt="${title}" class="search-results__card-img" />
@@ -110,7 +116,8 @@ cardData.forEach(({ id, title, priceCurrent, priceOld, badge, image }) => {
         ${badge ? `<div class="search-results__card-badge">${badge}</div>` : ""}
       </div>
     `;
-  container.insertAdjacentHTML("beforeend", cardHTML);
-});
+    container.insertAdjacentHTML("beforeend", cardHTML);
+  });
 
-updateCardStyles();
+  updateCardStyles();
+}
