@@ -178,13 +178,12 @@
     margin-right: 0;
   }
 
-  .payment-icons {
+  .footer__section.payment-icons {
     grid-area: payment-icons;
     display: flex;
-    gap: 12%;
     position: relative;
-    right: 7%;
-    bottom: 33%;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .footer__section.legal {
@@ -193,6 +192,16 @@
     position: relative;
     left: 5%;
     bottom: 33%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .footer__section.payment-icons {
+    right: 1%;
+    top: 3%;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 0;
   }
 }
 
@@ -239,7 +248,7 @@
     bottom: 0;
   }
 
-  .payment-icons {
+  .footer__section.payment-icons {
     right: 0;
     bottom: 0;
     justify-content: flex-start;

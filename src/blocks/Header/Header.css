@@ -23,7 +23,7 @@
 }
 
 .header__burger {
-  display: none; 
+  display: none;
   background: none;
   border: none;
 }
@@ -150,9 +150,15 @@
   }
 }
 
-@media screen and (max-width: 1267px) {
+@media screen and (max-width: 1300px) {
   .header__menu {
-    gap: 2vw;
+    gap: 3vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0px 7vw;
   }
 }
 
@@ -167,7 +173,7 @@
   }
 
   .header__burger {
-    display: block; 
+    display: block;
     position: relative;
     z-index: 10;
     cursor: pointer;
